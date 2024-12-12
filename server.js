@@ -15,7 +15,11 @@ const jsonMiddleware = (req, res, next) => {
 };
 
 const corsMiddleware = (req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:3000');
+    const allowedOrigins = ['http://127.0.0.1:3000', 'https://hongjinhao.github.io'];
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        res.setHeader('Access-Control-Allow-Origin', origin);
+    }
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     if (req.method === 'OPTIONS') {
