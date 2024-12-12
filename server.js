@@ -1,4 +1,4 @@
-import http from 'http';
+import express from 'express';
 
 const PORT = process.env.PORT || 8080;
 const db = { "likeCount": 10 };
