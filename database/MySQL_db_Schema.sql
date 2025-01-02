@@ -1,3 +1,9 @@
+-- This schema shows some MySQL statements used to create the database and table
+-- This database is queried from the website backend to get the number of likes and 
+-- also increase and decrease the number of likes
+-- To get: SUM(press_value)
+-- To increase: insert a new row with press_value = 1
+-- To decrease: insert a new row with press_value = -1
 CREATE DATABASE `likes`;
 -- SHOW DATABASES;
 USE `likes`;
