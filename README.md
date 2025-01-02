@@ -1,6 +1,7 @@
 # Like Button Backend API
-This is the backend for the dynamic like button on the [GitHub Pages website](https://hongjinhao.github.io).
-It provides a Java Data API server using express, node.js in JavaScript. 
+This is the backend for the dynamic like button on [My Website](https://hongjinhao.github.io).  
+The front end code can be found [here](https://github.com/hongjinhao/hongjinhao.github.io)  
+This backend code provides a Java Data API server using express, node.js in JavaScript. 
 
 - **Express API endpoints**:
   - `GET /api/likeCount`: Retrieve the current like count.
